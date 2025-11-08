@@ -1,0 +1,1745 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\user> wsl --install
+Downloading: Ubuntu
+Installing: Ubuntu
+Distribution successfully installed. It can be launched via 'wsl.exe -d Ubuntu'
+Launching Ubuntu...
+Provisioning the new WSL instance Ubuntu
+This might take a while...
+Create a default Unix user account: user2004
+New password:
+Retype new password:
+passwd: password updated successfully
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+user2004@DESKTOP-7AD8AO7:/mnt/c/Users/user$ sudo apt update && sudo apt upgrade -y
+[sudo] password for user2004:
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1305 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [215 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [9336 B]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [906 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [203 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.2 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [19.4 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2135 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1585 kB]
+Get:23 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [485 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [299 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [15.7 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1498 kB]
+Get:28 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:29 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [500 B]
+Get:30 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [27.4 kB]
+Get:31 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [5708 B]
+Get:32 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:33 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [384 B]
+Get:34 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [303 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [31.4 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2244 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [509 kB]
+Get:39 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:40 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [516 B]
+Get:41 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [30.3 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [5564 B]
+Get:43 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:44 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [484 B]
+Get:45 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.4 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9208 B]
+Get:47 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7136 B]
+Get:48 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [368 B]
+Get:49 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [28.9 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [17.5 kB]
+Get:51 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.0 kB]
+Get:52 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1444 B]
+Get:53 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:54 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:55 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:56 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 38.6 MB in 13s (2922 kB/s)
+Reading package lists... 4%
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+64 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following package was automatically installed and is no longer required:
+  libllvm19
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  libllvm20
+The following packages will be upgraded:
+  binutils binutils-common binutils-x86-64-linux-gnu cloud-init coreutils dconf-gsettings-backend dconf-service
+  distro-info-data dpkg landscape-client landscape-common libbinutils libc-bin libc6 libctf-nobfd0 libctf0 libcups2t64
+  libdconf1 libegl-mesa0 libgbm1 libgl1-mesa-dri libglx-mesa0 libgprofng0 libnss-systemd libpam-modules
+  libpam-modules-bin libpam-runtime libpam-systemd libpam0g libpython3.12-minimal libpython3.12-stdlib
+  libpython3.12t64 libsframe1 libsqlite3-0 libssh-4 libssl3t64 libsystemd-shared libsystemd0 libtiff6 libudev1 libxml2
+  locales mesa-libgallium mesa-vulkan-drivers openssh-client openssl python3-software-properties python3.12
+  python3.12-minimal snapd software-properties-common systemd systemd-dev systemd-hwe-hwdb systemd-resolved
+  systemd-sysv systemd-timesyncd udev vim vim-common vim-runtime vim-tiny wsl-pro-service xxd
+64 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+33 standard LTS security updates
+Need to get 145 MB of archives.
+After this operation, 148 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 coreutils amd64 9.4-3ubuntu6.1 [1413 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dpkg amd64 1.22.6ubuntu6.5 [1282 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc6 amd64 2.39-0ubuntu8.6 [3263 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-bin amd64 2.39-0ubuntu8.6 [682 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam0g amd64 1.5.3-5ubuntu5.5 [67.8 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 systemd-timesyncd amd64 255.4-1ubuntu8.11 [35.3 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssl3t64 amd64 3.0.13-0ubuntu3.6 [1940 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 systemd-resolved amd64 255.4-1ubuntu8.11 [296 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss-systemd amd64 255.4-1ubuntu8.11 [159 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 systemd-dev all 255.4-1ubuntu8.11 [106 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 systemd amd64 255.4-1ubuntu8.11 [3475 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 udev amd64 255.4-1ubuntu8.11 [1874 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 systemd-sysv amd64 255.4-1ubuntu8.11 [11.9 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-systemd amd64 255.4-1ubuntu8.11 [235 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsystemd-shared amd64 255.4-1ubuntu8.11 [2076 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libudev1 amd64 255.4-1ubuntu8.11 [176 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-runtime all 1.5.3-5ubuntu5.5 [40.8 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsystemd0 amd64 255.4-1ubuntu8.11 [434 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-modules-bin amd64 1.5.3-5ubuntu5.5 [51.9 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-modules amd64 1.5.3-5ubuntu5.5 [286 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12t64 amd64 3.12.3-1ubuntu0.8 [2355 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.8 [651 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.8 [2068 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.8 [2334 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.8 [836 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsqlite3-0 amd64 3.45.1-1ubuntu2.5 [701 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 distro-info-data all 0.60ubuntu0.5 [6934 B]
+Get:28 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2 amd64 2.9.14+dfsg-1.3ubuntu3.6 [763 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 locales all 2.39-0ubuntu8.6 [4229 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openssl amd64 3.0.13-0ubuntu3.6 [1003 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 systemd-hwe-hwdb all 255.1.6 [3684 B]
+Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 vim amd64 2:9.1.0016-1ubuntu7.9 [1881 kB]
+Get:33 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 vim-common all 2:9.1.0016-1ubuntu7.9 [386 kB]
+Get:34 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 vim-tiny amd64 2:9.1.0016-1ubuntu7.9 [803 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 vim-runtime all 2:9.1.0016-1ubuntu7.9 [7281 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 xxd amd64 2:9.1.0016-1ubuntu7.9 [63.8 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openssh-client amd64 1:9.6p1-3ubuntu13.14 [906 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgprofng0 amd64 2.42-4ubuntu2.6 [849 kB]
+Get:39 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf0 amd64 2.42-4ubuntu2.6 [94.5 kB]
+Get:40 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf-nobfd0 amd64 2.42-4ubuntu2.6 [97.9 kB]
+Get:41 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.42-4ubuntu2.6 [2463 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libbinutils amd64 2.42-4ubuntu2.6 [577 kB]
+Get:43 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils amd64 2.42-4ubuntu2.6 [18.1 kB]
+Get:44 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-common amd64 2.42-4ubuntu2.6 [240 kB]
+Get:45 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsframe1 amd64 2.42-4ubuntu2.6 [15.6 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dconf-gsettings-backend amd64 0.40.0-4ubuntu0.1 [22.1 kB]
+Get:47 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dconf-service amd64 0.40.0-4ubuntu0.1 [27.6 kB]
+Get:48 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdconf1 amd64 0.40.0-4ubuntu0.1 [39.6 kB]
+Get:49 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 landscape-client amd64 24.02-0ubuntu5.6 [124 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 landscape-common amd64 24.02-0ubuntu5.6 [93.2 kB]
+Get:51 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcups2t64 amd64 2.4.7-1.2ubuntu7.4 [272 kB]
+Get:52 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.0.7-0ubuntu0.24.04.2 [35.8 kB]Get:53 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.0.7-0ubuntu0.24.04.2 [141 kB]
+Get:54 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libllvm20 amd64 1:20.1.2-0ubuntu1~24.04.2 [30.6 MB]
+Get:55 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libegl-mesa0 amd64 25.0.7-0ubuntu0.24.04.2 [124 kB]
+Get:56 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.0.7-0ubuntu0.24.04.2 [32.7 kB]
+Get:57 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.0.7-0ubuntu0.24.04.2 [10.3 MB]Get:58 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssh-4 amd64 0.10.6-2ubuntu0.2 [188 kB]
+Get:59 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtiff6 amd64 4.5.1+git230720-4ubuntu2.4 [199 kB]
+Get:60 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-vulkan-drivers amd64 25.0.7-0ubuntu0.24.04.2 [15.3 MB]
+Get:61 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 software-properties-common all 0.99.49.3 [14.4 kB]
+Get:62 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-software-properties all 0.99.49.3 [29.9 kB]
+Get:63 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 snapd amd64 2.71+ubuntu24.04 [33.9 MB]
+Get:64 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 wsl-pro-service amd64 0.1.18~24.04.3 [4280 kB]
+Get:65 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cloud-init all 25.2-0ubuntu1~24.04.1 [625 kB]
+Fetched 145 MB in 46s (3142 kB/s)
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../coreutils_9.4-3ubuntu6.1_amd64.deb ...
+Unpacking coreutils (9.4-3ubuntu6.1) over (9.4-3ubuntu6) ...
+Setting up coreutils (9.4-3ubuntu6.1) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../dpkg_1.22.6ubuntu6.5_amd64.deb ...
+Unpacking dpkg (1.22.6ubuntu6.5) over (1.22.6ubuntu6.1) ...
+Setting up dpkg (1.22.6ubuntu6.5) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../libc6_2.39-0ubuntu8.6_amd64.deb ...
+Unpacking libc6:amd64 (2.39-0ubuntu8.6) over (2.39-0ubuntu8.5) ...
+Setting up libc6:amd64 (2.39-0ubuntu8.6) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../libc-bin_2.39-0ubuntu8.6_amd64.deb ...
+Unpacking libc-bin (2.39-0ubuntu8.6) over (2.39-0ubuntu8.5) ...
+Setting up libc-bin (2.39-0ubuntu8.6) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../libpam0g_1.5.3-5ubuntu5.5_amd64.deb ...
+Unpacking libpam0g:amd64 (1.5.3-5ubuntu5.5) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam0g:amd64 (1.5.3-5ubuntu5.5) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../systemd-timesyncd_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking systemd-timesyncd (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Preparing to unpack .../libssl3t64_3.0.13-0ubuntu3.6_amd64.deb ...
+Unpacking libssl3t64:amd64 (3.0.13-0ubuntu3.6) over (3.0.13-0ubuntu3.5) ...
+Setting up libssl3t64:amd64 (3.0.13-0ubuntu3.6) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../0-systemd-resolved_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking systemd-resolved (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Preparing to unpack .../1-libnss-systemd_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking libnss-systemd:amd64 (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Preparing to unpack .../2-systemd-dev_255.4-1ubuntu8.11_all.deb ...
+Unpacking systemd-dev (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Preparing to unpack .../3-systemd_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking systemd (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Preparing to unpack .../4-udev_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking udev (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Preparing to unpack .../5-libsystemd-shared_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking libsystemd-shared:amd64 (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Setting up libsystemd-shared:amd64 (255.4-1ubuntu8.11) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../libsystemd0_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking libsystemd0:amd64 (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Setting up libsystemd0:amd64 (255.4-1ubuntu8.11) ...
+Setting up systemd-dev (255.4-1ubuntu8.11) ...
+Setting up systemd (255.4-1ubuntu8.11) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../systemd-sysv_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking systemd-sysv (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Preparing to unpack .../libpam-systemd_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking libpam-systemd:amd64 (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Preparing to unpack .../libudev1_255.4-1ubuntu8.11_amd64.deb ...
+Unpacking libudev1:amd64 (255.4-1ubuntu8.11) over (255.4-1ubuntu8.10) ...
+Setting up libudev1:amd64 (255.4-1ubuntu8.11) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../libpam-runtime_1.5.3-5ubuntu5.5_all.deb ...
+Unpacking libpam-runtime (1.5.3-5ubuntu5.5) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam-runtime (1.5.3-5ubuntu5.5) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../libpam-modules-bin_1.5.3-5ubuntu5.5_amd64.deb ...
+Unpacking libpam-modules-bin (1.5.3-5ubuntu5.5) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam-modules-bin (1.5.3-5ubuntu5.5) ...
+pam_namespace.service is a disabled or a static unit not running, not starting it.
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../libpam-modules_1.5.3-5ubuntu5.5_amd64.deb ...
+Unpacking libpam-modules:amd64 (1.5.3-5ubuntu5.5) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam-modules:amd64 (1.5.3-5ubuntu5.5) ...
+(Reading database ... 40754 files and directories currently installed.)
+Preparing to unpack .../00-libpython3.12t64_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking libpython3.12t64:amd64 (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../01-python3.12_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking python3.12 (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../02-libpython3.12-stdlib_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../03-python3.12-minimal_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking python3.12-minimal (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../04-libpython3.12-minimal_3.12.3-1ubuntu0.8_amd64.deb ...
+Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.8) over (3.12.3-1ubuntu0.7) ...
+Preparing to unpack .../05-libsqlite3-0_3.45.1-1ubuntu2.5_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.45.1-1ubuntu2.5) over (3.45.1-1ubuntu2.4) ...
+Preparing to unpack .../06-distro-info-data_0.60ubuntu0.5_all.deb ...
+Unpacking distro-info-data (0.60ubuntu0.5) over (0.60ubuntu0.3) ...
+Preparing to unpack .../07-libxml2_2.9.14+dfsg-1.3ubuntu3.6_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.6) over (2.9.14+dfsg-1.3ubuntu3.3) ...
+Preparing to unpack .../08-locales_2.39-0ubuntu8.6_all.deb ...
+Unpacking locales (2.39-0ubuntu8.6) over (2.39-0ubuntu8.5) ...
+Preparing to unpack .../09-openssl_3.0.13-0ubuntu3.6_amd64.deb ...
+Unpacking openssl (3.0.13-0ubuntu3.6) over (3.0.13-0ubuntu3.5) ...
+Preparing to unpack .../10-systemd-hwe-hwdb_255.1.6_all.deb ...
+Unpacking systemd-hwe-hwdb (255.1.6) over (255.1.4) ...
+Preparing to unpack .../11-vim_2%3a9.1.0016-1ubuntu7.9_amd64.deb ...
+Unpacking vim (2:9.1.0016-1ubuntu7.9) over (2:9.1.0016-1ubuntu7.8) ...
+Preparing to unpack .../12-vim-common_2%3a9.1.0016-1ubuntu7.9_all.deb ...
+Unpacking vim-common (2:9.1.0016-1ubuntu7.9) over (2:9.1.0016-1ubuntu7.8) ...
+Preparing to unpack .../13-vim-tiny_2%3a9.1.0016-1ubuntu7.9_amd64.deb ...
+Unpacking vim-tiny (2:9.1.0016-1ubuntu7.9) over (2:9.1.0016-1ubuntu7.8) ...
+Preparing to unpack .../14-vim-runtime_2%3a9.1.0016-1ubuntu7.9_all.deb ...
+Unpacking vim-runtime (2:9.1.0016-1ubuntu7.9) over (2:9.1.0016-1ubuntu7.8) ...
+Preparing to unpack .../15-xxd_2%3a9.1.0016-1ubuntu7.9_amd64.deb ...
+Unpacking xxd (2:9.1.0016-1ubuntu7.9) over (2:9.1.0016-1ubuntu7.8) ...
+Preparing to unpack .../16-openssh-client_1%3a9.6p1-3ubuntu13.14_amd64.deb ...
+Unpacking openssh-client (1:9.6p1-3ubuntu13.14) over (1:9.6p1-3ubuntu13.13) ...
+Preparing to unpack .../17-libgprofng0_2.42-4ubuntu2.6_amd64.deb ...
+Unpacking libgprofng0:amd64 (2.42-4ubuntu2.6) over (2.42-4ubuntu2.5) ...
+Preparing to unpack .../18-libctf0_2.42-4ubuntu2.6_amd64.deb ...
+Unpacking libctf0:amd64 (2.42-4ubuntu2.6) over (2.42-4ubuntu2.5) ...
+Preparing to unpack .../19-libctf-nobfd0_2.42-4ubuntu2.6_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.42-4ubuntu2.6) over (2.42-4ubuntu2.5) ...
+Preparing to unpack .../20-binutils-x86-64-linux-gnu_2.42-4ubuntu2.6_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.42-4ubuntu2.6) over (2.42-4ubuntu2.5) ...
+Preparing to unpack .../21-libbinutils_2.42-4ubuntu2.6_amd64.deb ...
+Unpacking libbinutils:amd64 (2.42-4ubuntu2.6) over (2.42-4ubuntu2.5) ...
+Preparing to unpack .../22-binutils_2.42-4ubuntu2.6_amd64.deb ...
+Unpacking binutils (2.42-4ubuntu2.6) over (2.42-4ubuntu2.5) ...
+Preparing to unpack .../23-binutils-common_2.42-4ubuntu2.6_amd64.deb ...
+Unpacking binutils-common:amd64 (2.42-4ubuntu2.6) over (2.42-4ubuntu2.5) ...
+Preparing to unpack .../24-libsframe1_2.42-4ubuntu2.6_amd64.deb ...
+Unpacking libsframe1:amd64 (2.42-4ubuntu2.6) over (2.42-4ubuntu2.5) ...
+Preparing to unpack .../25-dconf-gsettings-backend_0.40.0-4ubuntu0.1_amd64.deb ...
+Unpacking dconf-gsettings-backend:amd64 (0.40.0-4ubuntu0.1) over (0.40.0-4build2) ...
+Preparing to unpack .../26-dconf-service_0.40.0-4ubuntu0.1_amd64.deb ...
+Unpacking dconf-service (0.40.0-4ubuntu0.1) over (0.40.0-4build2) ...
+Preparing to unpack .../27-libdconf1_0.40.0-4ubuntu0.1_amd64.deb ...
+Unpacking libdconf1:amd64 (0.40.0-4ubuntu0.1) over (0.40.0-4build2) ...
+Preparing to unpack .../28-landscape-client_24.02-0ubuntu5.6_amd64.deb ...
+Unpacking landscape-client (24.02-0ubuntu5.6) over (24.02-0ubuntu5.3) ...
+Preparing to unpack .../29-landscape-common_24.02-0ubuntu5.6_amd64.deb ...
+Unpacking landscape-common (24.02-0ubuntu5.6) over (24.02-0ubuntu5.3) ...
+Preparing to unpack .../30-libcups2t64_2.4.7-1.2ubuntu7.4_amd64.deb ...
+Unpacking libcups2t64:amd64 (2.4.7-1.2ubuntu7.4) over (2.4.7-1.2ubuntu7.3) ...
+Preparing to unpack .../31-libgl1-mesa-dri_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (25.0.7-0ubuntu0.24.04.2) over (25.0.7-0ubuntu0.24.04.1) ...
+Preparing to unpack .../32-libglx-mesa0_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libglx-mesa0:amd64 (25.0.7-0ubuntu0.24.04.2) over (25.0.7-0ubuntu0.24.04.1) ...
+Selecting previously unselected package libllvm20:amd64.
+Preparing to unpack .../33-libllvm20_1%3a20.1.2-0ubuntu1~24.04.2_amd64.deb ...
+Unpacking libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.2) ...
+Preparing to unpack .../34-libegl-mesa0_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libegl-mesa0:amd64 (25.0.7-0ubuntu0.24.04.2) over (25.0.7-0ubuntu0.24.04.1) ...
+Preparing to unpack .../35-libgbm1_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgbm1:amd64 (25.0.7-0ubuntu0.24.04.2) over (25.0.7-0ubuntu0.24.04.1) ...
+Preparing to unpack .../36-mesa-libgallium_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-libgallium:amd64 (25.0.7-0ubuntu0.24.04.2) over (25.0.7-0ubuntu0.24.04.1) ...
+Preparing to unpack .../37-libssh-4_0.10.6-2ubuntu0.2_amd64.deb ...
+Unpacking libssh-4:amd64 (0.10.6-2ubuntu0.2) over (0.10.6-2ubuntu0.1) ...
+Preparing to unpack .../38-libtiff6_4.5.1+git230720-4ubuntu2.4_amd64.deb ...
+Unpacking libtiff6:amd64 (4.5.1+git230720-4ubuntu2.4) over (4.5.1+git230720-4ubuntu2.2) ...
+Preparing to unpack .../39-mesa-vulkan-drivers_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-vulkan-drivers:amd64 (25.0.7-0ubuntu0.24.04.2) over (25.0.7-0ubuntu0.24.04.1) ...
+Preparing to unpack .../40-software-properties-common_0.99.49.3_all.deb ...
+Unpacking software-properties-common (0.99.49.3) over (0.99.49.2) ...
+Preparing to unpack .../41-python3-software-properties_0.99.49.3_all.deb ...
+Unpacking python3-software-properties (0.99.49.3) over (0.99.49.2) ...
+Preparing to unpack .../42-snapd_2.71+ubuntu24.04_amd64.deb ...
+Unpacking snapd (2.71+ubuntu24.04) over (2.68.5+ubuntu24.04.1) ...
+Preparing to unpack .../43-wsl-pro-service_0.1.18~24.04.3_amd64.deb ...
+Unpacking wsl-pro-service (0.1.18~24.04.3) over (0.1.4) ...
+Preparing to unpack .../44-cloud-init_25.2-0ubuntu1~24.04.1_all.deb ...
+Unpacking cloud-init (25.2-0ubuntu1~24.04.1) over (25.1.4-0ubuntu0~24.04.1) ...
+Setting up wsl-pro-service (0.1.18~24.04.3) ...
+Setting up systemd-sysv (255.4-1ubuntu8.11) ...
+Setting up cloud-init (25.2-0ubuntu1~24.04.1) ...
+Installing new version of config file /etc/cloud/templates/sources.list.debian.deb822.tmpl ...
+Setting up distro-info-data (0.60ubuntu0.5) ...
+Setting up openssh-client (1:9.6p1-3ubuntu13.14) ...
+Setting up libsqlite3-0:amd64 (3.45.1-1ubuntu2.5) ...
+Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.8) ...
+Setting up binutils-common:amd64 (2.42-4ubuntu2.6) ...
+Setting up libctf-nobfd0:amd64 (2.42-4ubuntu2.6) ...
+Setting up libnss-systemd:amd64 (255.4-1ubuntu8.11) ...
+Setting up locales (2.39-0ubuntu8.6) ...
+Generating locales (this might take a while)...
+Generation complete.
+Setting up landscape-common (24.02-0ubuntu5.6) ...
+Setting up xxd (2:9.1.0016-1ubuntu7.9) ...
+Setting up libsframe1:amd64 (2.42-4ubuntu2.6) ...
+Setting up libdconf1:amd64 (0.40.0-4ubuntu0.1) ...
+Setting up vim-common (2:9.1.0016-1ubuntu7.9) ...
+Setting up python3-software-properties (0.99.49.3) ...
+Setting up landscape-client (24.02-0ubuntu5.6) ...
+Setting up systemd-timesyncd (255.4-1ubuntu8.11) ...
+Setting up udev (255.4-1ubuntu8.11) ...
+Setting up libssh-4:amd64 (0.10.6-2ubuntu0.2) ...
+Setting up systemd-hwe-hwdb (255.1.6) ...
+Setting up libtiff6:amd64 (4.5.1+git230720-4ubuntu2.4) ...
+Setting up libpam-systemd:amd64 (255.4-1ubuntu8.11) ...
+Setting up libbinutils:amd64 (2.42-4ubuntu2.6) ...
+Setting up vim-runtime (2:9.1.0016-1ubuntu7.9) ...
+Setting up openssl (3.0.13-0ubuntu3.6) ...
+Setting up libcups2t64:amd64 (2.4.7-1.2ubuntu7.4) ...
+Setting up libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.6) ...
+Setting up systemd-resolved (255.4-1ubuntu8.11) ...
+Setting up libctf0:amd64 (2.42-4ubuntu2.6) ...
+Setting up python3.12-minimal (3.12.3-1ubuntu0.8) ...
+Setting up snapd (2.71+ubuntu24.04) ...
+Installing new version of config file /etc/apparmor.d/usr.lib.snapd.snap-confine.real ...
+snapd.failure.service is a disabled or a static unit not running, not starting it.
+snapd.gpio-chardev-setup.target is a disabled or a static unit not running, not starting it.
+snapd.snap-repair.service is a disabled or a static unit not running, not starting it.
+Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.8) ...
+Setting up python3.12 (3.12.3-1ubuntu0.8) ...
+Setting up dconf-service (0.40.0-4ubuntu0.1) ...
+Setting up vim-tiny (2:9.1.0016-1ubuntu7.9) ...
+Setting up software-properties-common (0.99.49.3) ...
+Setting up libpython3.12t64:amd64 (3.12.3-1ubuntu0.8) ...
+Setting up libgprofng0:amd64 (2.42-4ubuntu2.6) ...
+Setting up libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.2) ...
+Setting up binutils-x86-64-linux-gnu (2.42-4ubuntu2.6) ...
+Setting up mesa-vulkan-drivers:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Setting up mesa-libgallium:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Setting up vim (2:9.1.0016-1ubuntu7.9) ...
+Setting up dconf-gsettings-backend:amd64 (0.40.0-4ubuntu0.1) ...
+Setting up libgbm1:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Setting up libgl1-mesa-dri:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Setting up binutils (2.42-4ubuntu2.6) ...
+Setting up libegl-mesa0:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Setting up libglx-mesa0:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+Processing triggers for rsyslog (8.2312.0-3ubuntu9.1) ...
+Processing triggers for systemd (255.4-1ubuntu8.11) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.4) ...
+Processing triggers for dbus (1.14.10-4ubuntu4.1) ...
+Processing triggers for install-info (7.1-3build2) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+user2004@DESKTOP-7AD8AO7:/mnt/c/Users/user$ sudo apt install build-essential
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm19
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  bzip2 cpp cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev fakeroot g++ g++-13 g++-13-x86-64-linux-gnu
+  g++-x86-64-linux-gnu gcc gcc-13 gcc-13-base gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libaom3 libasan8 libatomic1 libc-dev-bin libc-devtools libc6-dev
+  libcc1-0 libcrypt-dev libde265-0 libdpkg-perl libfakeroot libfile-fcntllock-perl libgcc-13-dev libgd3 libgomp1
+  libheif-plugin-aomdec libheif-plugin-aomenc libheif-plugin-libde265 libheif1 libhwasan0 libisl23 libitm1 liblsan0
+  libmpc3 libquadmath0 libstdc++-13-dev libtsan2 libubsan1 libxpm4 linux-libc-dev lto-disabled-list make manpages-dev
+  rpcsvc-proto
+Suggested packages:
+  bzip2-doc cpp-doc gcc-13-locales cpp-13-doc debian-keyring g++-multilib g++-13-multilib gcc-13-doc gcc-multilib
+  autoconf automake libtool flex bison gdb gcc-doc gcc-13-multilib gdb-x86-64-linux-gnu glibc-doc bzr libgd-tools
+  libheif-plugin-x265 libheif-plugin-ffmpegdec libheif-plugin-jpegdec libheif-plugin-jpegenc libheif-plugin-j2kdec
+  libheif-plugin-j2kenc libheif-plugin-rav1e libheif-plugin-svtenc libstdc++-13-doc make-doc
+The following NEW packages will be installed:
+  build-essential bzip2 cpp cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev fakeroot g++ g++-13
+  g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13 gcc-13-base gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libaom3 libasan8 libatomic1 libc-dev-bin
+  libc-devtools libc6-dev libcc1-0 libcrypt-dev libde265-0 libdpkg-perl libfakeroot libfile-fcntllock-perl
+  libgcc-13-dev libgd3 libgomp1 libheif-plugin-aomdec libheif-plugin-aomenc libheif-plugin-libde265 libheif1
+  libhwasan0 libisl23 libitm1 liblsan0 libmpc3 libquadmath0 libstdc++-13-dev libtsan2 libubsan1 libxpm4 linux-libc-dev
+  lto-disabled-list make manpages-dev rpcsvc-proto
+0 upgraded, 54 newly installed, 0 to remove and 0 not upgraded.
+Need to get 71.4 MB of archives.
+After this operation, 242 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-dev-bin amd64 2.39-0ubuntu8.6 [20.4 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 linux-libc-dev amd64 6.8.0-87.88 [1931 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libcrypt-dev amd64 1:4.4.36-4build1 [112 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu7 [67.4 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc6-dev amd64 2.39-0ubuntu8.6 [2125 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04 [51.5 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libisl23 amd64 0.26-3build1.1 [680 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmpc3 amd64 1.3.1-1build1.1 [54.6 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [10.7 MB]
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04 [1038 B]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [5326 B]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp amd64 4:13.2.0-7ubuntu1 [22.4 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcc1-0 amd64 14.2.0-4ubuntu2~24.04 [48.0 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgomp1 amd64 14.2.0-4ubuntu2~24.04 [148 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libitm1 amd64 14.2.0-4ubuntu2~24.04 [29.7 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libatomic1 amd64 14.2.0-4ubuntu2~24.04 [10.5 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libasan8 amd64 14.2.0-4ubuntu2~24.04 [3031 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblsan0 amd64 14.2.0-4ubuntu2~24.04 [1322 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtsan2 amd64 14.2.0-4ubuntu2~24.04 [2772 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libubsan1 amd64 14.2.0-4ubuntu2~24.04 [1184 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libhwasan0 amd64 14.2.0-4ubuntu2~24.04 [1641 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libquadmath0 amd64 14.2.0-4ubuntu2~24.04 [153 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04 [2681 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [21.1 MB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04 [494 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [1212 B]
+Get:27 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc amd64 4:13.2.0-7ubuntu1 [5018 B]
+Get:28 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libstdc++-13-dev amd64 13.3.0-6ubuntu2~24.04 [2420 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [12.2 MB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13 amd64 13.3.0-6ubuntu2~24.04 [16.1 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble/main amd64 g++-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [964 B]
+Get:32 http://archive.ubuntu.com/ubuntu noble/main amd64 g++ amd64 4:13.2.0-7ubuntu1 [1100 B]
+Get:33 http://archive.ubuntu.com/ubuntu noble/main amd64 make amd64 4.3-4.1build2 [180 kB]
+Get:34 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.5 [269 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1build0.1 [34.5 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble/main amd64 lto-disabled-list all 47 [12.4 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dpkg-dev all 1.22.6ubuntu6.5 [1074 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble/main amd64 build-essential amd64 12.10ubuntu1 [4928 B]
+Get:39 http://archive.ubuntu.com/ubuntu noble/main amd64 libfakeroot amd64 1.33-1 [32.4 kB]
+Get:40 http://archive.ubuntu.com/ubuntu noble/main amd64 fakeroot amd64 1.33-1 [67.2 kB]
+Get:41 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-diff-perl all 1.201-1 [41.8 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-diff-xs-perl amd64 0.04-8build3 [11.2 kB]
+Get:43 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-merge-perl all 0.08-5 [11.4 kB]
+Get:44 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libaom3 amd64 3.8.2-2ubuntu0.1 [1941 kB]
+Get:45 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libheif-plugin-aomdec amd64 1.17.6-1ubuntu4.1 [10.4 kB]Get:46 http://archive.ubuntu.com/ubuntu noble/main amd64 libde265-0 amd64 1.0.15-1build3 [166 kB]
+Get:47 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libheif-plugin-libde265 amd64 1.17.6-1ubuntu4.1 [8176 B]
+Get:48 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libheif1 amd64 1.17.6-1ubuntu4.1 [275 kB]
+Get:49 http://archive.ubuntu.com/ubuntu noble/main amd64 libxpm4 amd64 1:3.5.17-1build2 [36.5 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble/main amd64 libgd3 amd64 2.3.3-9ubuntu5 [128 kB]
+Get:51 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-devtools amd64 2.39-0ubuntu8.6 [29.3 kB]
+Get:52 http://archive.ubuntu.com/ubuntu noble/main amd64 libfile-fcntllock-perl amd64 0.22-4ubuntu5 [30.7 kB]
+Get:53 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libheif-plugin-aomenc amd64 1.17.6-1ubuntu4.1 [14.7 kB]Get:54 http://archive.ubuntu.com/ubuntu noble/main amd64 manpages-dev all 6.7-2 [2013 kB]
+Fetched 71.4 MB in 21s (3420 kB/s)
+Extracting templates from packages: 100%
+Selecting previously unselected package libc-dev-bin.
+(Reading database ... 40768 files and directories currently installed.)
+Preparing to unpack .../00-libc-dev-bin_2.39-0ubuntu8.6_amd64.deb ...
+Unpacking libc-dev-bin (2.39-0ubuntu8.6) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../01-linux-libc-dev_6.8.0-87.88_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (6.8.0-87.88) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../02-libcrypt-dev_1%3a4.4.36-4build1_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.36-4build1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../03-rpcsvc-proto_1.4.2-0ubuntu7_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.2-0ubuntu7) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../04-libc6-dev_2.39-0ubuntu8.6_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.39-0ubuntu8.6) ...
+Selecting previously unselected package gcc-13-base:amd64.
+Preparing to unpack .../05-gcc-13-base_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../06-libisl23_0.26-3build1.1_amd64.deb ...
+Unpacking libisl23:amd64 (0.26-3build1.1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../07-libmpc3_1.3.1-1build1.1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.3.1-1build1.1) ...
+Selecting previously unselected package cpp-13-x86-64-linux-gnu.
+Preparing to unpack .../08-cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package cpp-13.
+Preparing to unpack .../09-cpp-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking cpp-13 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package cpp-x86-64-linux-gnu.
+Preparing to unpack .../10-cpp-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../11-cpp_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking cpp (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../12-libcc1-0_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../13-libgomp1_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libgomp1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../14-libitm1_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libitm1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../15-libatomic1_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libatomic1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libasan8:amd64.
+Preparing to unpack .../16-libasan8_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libasan8:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../17-liblsan0_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking liblsan0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libtsan2:amd64.
+Preparing to unpack .../18-libtsan2_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libtsan2:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../19-libubsan1_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libubsan1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libhwasan0:amd64.
+Preparing to unpack .../20-libhwasan0_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libhwasan0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../21-libquadmath0_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libgcc-13-dev:amd64.
+Preparing to unpack .../22-libgcc-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package gcc-13-x86-64-linux-gnu.
+Preparing to unpack .../23-gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package gcc-13.
+Preparing to unpack .../24-gcc-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking gcc-13 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package gcc-x86-64-linux-gnu.
+Preparing to unpack .../25-gcc-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../26-gcc_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking gcc (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package libstdc++-13-dev:amd64.
+Preparing to unpack .../27-libstdc++-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package g++-13-x86-64-linux-gnu.
+Preparing to unpack .../28-g++-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package g++-13.
+Preparing to unpack .../29-g++-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Unpacking g++-13 (13.3.0-6ubuntu2~24.04) ...
+Selecting previously unselected package g++-x86-64-linux-gnu.
+Preparing to unpack .../30-g++-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../31-g++_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking g++ (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../32-make_4.3-4.1build2_amd64.deb ...
+Unpacking make (4.3-4.1build2) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../33-libdpkg-perl_1.22.6ubuntu6.5_all.deb ...
+Unpacking libdpkg-perl (1.22.6ubuntu6.5) ...
+Selecting previously unselected package bzip2.
+Preparing to unpack .../34-bzip2_1.0.8-5.1build0.1_amd64.deb ...
+Unpacking bzip2 (1.0.8-5.1build0.1) ...
+Selecting previously unselected package lto-disabled-list.
+Preparing to unpack .../35-lto-disabled-list_47_all.deb ...
+Unpacking lto-disabled-list (47) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../36-dpkg-dev_1.22.6ubuntu6.5_all.deb ...
+Unpacking dpkg-dev (1.22.6ubuntu6.5) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../37-build-essential_12.10ubuntu1_amd64.deb ...
+Unpacking build-essential (12.10ubuntu1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../38-libfakeroot_1.33-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.33-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../39-fakeroot_1.33-1_amd64.deb ...
+Unpacking fakeroot (1.33-1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../40-libalgorithm-diff-perl_1.201-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.201-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl:amd64.
+Preparing to unpack .../41-libalgorithm-diff-xs-perl_0.04-8build3_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl:amd64 (0.04-8build3) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../42-libalgorithm-merge-perl_0.08-5_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-5) ...
+Selecting previously unselected package libaom3:amd64.
+Preparing to unpack .../43-libaom3_3.8.2-2ubuntu0.1_amd64.deb ...
+Unpacking libaom3:amd64 (3.8.2-2ubuntu0.1) ...
+Selecting previously unselected package libheif-plugin-aomdec:amd64.
+Preparing to unpack .../44-libheif-plugin-aomdec_1.17.6-1ubuntu4.1_amd64.deb ...
+Unpacking libheif-plugin-aomdec:amd64 (1.17.6-1ubuntu4.1) ...
+Selecting previously unselected package libde265-0:amd64.
+Preparing to unpack .../45-libde265-0_1.0.15-1build3_amd64.deb ...
+Unpacking libde265-0:amd64 (1.0.15-1build3) ...
+Selecting previously unselected package libheif-plugin-libde265:amd64.
+Preparing to unpack .../46-libheif-plugin-libde265_1.17.6-1ubuntu4.1_amd64.deb ...
+Unpacking libheif-plugin-libde265:amd64 (1.17.6-1ubuntu4.1) ...
+Selecting previously unselected package libheif1:amd64.
+Preparing to unpack .../47-libheif1_1.17.6-1ubuntu4.1_amd64.deb ...
+Unpacking libheif1:amd64 (1.17.6-1ubuntu4.1) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../48-libxpm4_1%3a3.5.17-1build2_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.17-1build2) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../49-libgd3_2.3.3-9ubuntu5_amd64.deb ...
+Unpacking libgd3:amd64 (2.3.3-9ubuntu5) ...
+Selecting previously unselected package libc-devtools.
+Preparing to unpack .../50-libc-devtools_2.39-0ubuntu8.6_amd64.deb ...
+Unpacking libc-devtools (2.39-0ubuntu8.6) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../51-libfile-fcntllock-perl_0.22-4ubuntu5_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-4ubuntu5) ...
+Selecting previously unselected package libheif-plugin-aomenc:amd64.
+Preparing to unpack .../52-libheif-plugin-aomenc_1.17.6-1ubuntu4.1_amd64.deb ...
+Unpacking libheif-plugin-aomenc:amd64 (1.17.6-1ubuntu4.1) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../53-manpages-dev_6.7-2_all.deb ...
+Unpacking manpages-dev (6.7-2) ...
+Setting up libaom3:amd64 (3.8.2-2ubuntu0.1) ...
+Setting up manpages-dev (6.7-2) ...
+Setting up lto-disabled-list (47) ...
+Setting up libxpm4:amd64 (1:3.5.17-1build2) ...
+Setting up libfile-fcntllock-perl (0.22-4ubuntu5) ...
+Setting up libalgorithm-diff-perl (1.201-1) ...
+Setting up linux-libc-dev:amd64 (6.8.0-87.88) ...
+Setting up libgomp1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up bzip2 (1.0.8-5.1build0.1) ...
+Setting up libfakeroot:amd64 (1.33-1) ...
+Setting up fakeroot (1.33-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up rpcsvc-proto (1.4.2-0ubuntu7) ...
+Setting up gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04) ...
+Setting up make (4.3-4.1build2) ...
+Setting up libquadmath0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libmpc3:amd64 (1.3.1-1build1.1) ...
+Setting up libatomic1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libdpkg-perl (1.22.6ubuntu6.5) ...
+Setting up libubsan1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libhwasan0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libcrypt-dev:amd64 (1:4.4.36-4build1) ...
+Setting up libasan8:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libtsan2:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libisl23:amd64 (0.26-3build1.1) ...
+Setting up libde265-0:amd64 (1.0.15-1build3) ...
+Setting up libc-dev-bin (2.39-0ubuntu8.6) ...
+Setting up libalgorithm-diff-xs-perl:amd64 (0.04-8build3) ...
+Setting up libcc1-0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up liblsan0:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libitm1:amd64 (14.2.0-4ubuntu2~24.04) ...
+Setting up libalgorithm-merge-perl (0.08-5) ...
+Setting up cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Setting up dpkg-dev (1.22.6ubuntu6.5) ...
+Setting up libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
+Setting up libc6-dev:amd64 (2.39-0ubuntu8.6) ...
+Setting up libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
+Setting up cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up cpp-13 (13.3.0-6ubuntu2~24.04) ...
+Setting up gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Setting up gcc-13 (13.3.0-6ubuntu2~24.04) ...
+Setting up cpp (4:13.2.0-7ubuntu1) ...
+Setting up g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Setting up gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up gcc (4:13.2.0-7ubuntu1) ...
+Setting up g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up g++-13 (13.3.0-6ubuntu2~24.04) ...
+Setting up g++ (4:13.2.0-7ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.10ubuntu1) ...
+Setting up libheif1:amd64 (1.17.6-1ubuntu4.1) ...
+Setting up libgd3:amd64 (2.3.3-9ubuntu5) ...
+Setting up libc-devtools (2.39-0ubuntu8.6) ...
+Setting up libheif-plugin-aomdec:amd64 (1.17.6-1ubuntu4.1) ...
+Setting up libheif-plugin-libde265:amd64 (1.17.6-1ubuntu4.1) ...
+Setting up libheif-plugin-aomenc:amd64 (1.17.6-1ubuntu4.1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+user2004@DESKTOP-7AD8AO7:/mnt/c/Users/user$ mkdir ~/file_explorer
+user2004@DESKTOP-7AD8AO7:/mnt/c/Users/user$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ mkdir src build
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ls
+build  src
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ nano src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ g++ -std=c++17 -o build/file_explorer src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current: "/home/user2004/file_explorer"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> l
+Listing: "/home/user2004/file_explorer"
+[D] build
+[D] src
+
+Current: "/home/user2004/file_explorer"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> c src
+
+Current: "/home/user2004/file_explorer/src"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> u
+
+Current: "/home/user2004/file_explorer"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> q
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ mkdir testdir
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd testdir
+user2004@DESKTOP-7AD8AO7:~/file_explorer/testdir$ mkdir subdir
+user2004@DESKTOP-7AD8AO7:~/file_explorer/testdir$ echo "hello" > file1.txt
+user2004@DESKTOP-7AD8AO7:~/file_explorer/testdir$ echo "sample" > file2.txt
+user2004@DESKTOP-7AD8AO7:~/file_explorer/testdir$ cd..
+cd..: command not found
+user2004@DESKTOP-7AD8AO7:~/file_explorer/testdir$ cd ..
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current: "/home/user2004/file_explorer"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> c testdir
+
+Current: "/home/user2004/file_explorer/testdir"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> l
+Listing: "/home/user2004/file_explorer/testdir"
+[D] subdir
+[F] file1.txt
+[F] file2.txt
+
+Current: "/home/user2004/file_explorer/testdir"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> c subdir
+
+Current: "/home/user2004/file_explorer/testdir/subdir"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> u
+
+Current: "/home/user2004/file_explorer/testdir"
+Commands: l=list, c <dir>=cd, u=up, q=quit
+> q
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ls
+build  src  testdir
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ nano src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ g++ -std=c++17 -o build/file_explorer src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 1
+Listing: "/home/user2004/file_explorer"
+[D]          0 bytes  build
+[D]          0 bytes  src
+[D]          0 bytes  testdir
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 2
+Enter directory name: src
+
+Current Directory: "/home/user2004/file_explorer/src"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 3
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 4
+Enter file or directory name: main.cpp
+Not found!
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 5
+Enter name: adyasha
+Create (f)ile or (d)irectory? f
+File created.
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 6
+Enter name to delete: adyasha
+Are you sure you want to delete adyasha? (y/n): y
+Deleted successfully.
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 0
+Goodbye!
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ mkdir testdir
+mkdir: cannot create directory ‘testdir’: File exists
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ mkdir testdir1
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd testdir1
+user2004@DESKTOP-7AD8AO7:~/file_explorer/testdir1$ echo "hello" > file1.txt
+user2004@DESKTOP-7AD8AO7:~/file_explorer/testdir1$ mkdir subdir1
+user2004@DESKTOP-7AD8AO7:~/file_explorer/testdir1$ cd ..
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 1
+Listing: "/home/user2004/file_explorer"
+[D]          0 bytes  build
+[D]          0 bytes  src
+[D]          0 bytes  testdir
+[D]          0 bytes  testdir1
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 2
+Enter directory name: testdir1
+
+Current Directory: "/home/user2004/file_explorer/testdir1"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 4
+user2004@DESKTOP-7AD8AO7:~/file_explorer$
+
+Path: "/home/user2004/file_explorer/testdir1/file1.txt"
+Type: File
+Size: 6 bytes
+Last modified: 2025-11-07 17:45:31
+
+Current Directory: "/home/user2004/file_explorer/testdir1"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 5
+Enter name: newfile.txt
+Create (f)ile or (d)irectory? f
+File created.
+
+Current Directory: "/home/user2004/file_explorer/testdir1"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 0
+Goodbye!
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ nano README.md
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ls -R
+.:
+README.md  build  src  testdir  testdir1
+
+./build:
+file_explorer
+
+./src:
+main.cpp
+
+./testdir:
+file1.txt  file2.txt  subdir
+
+./testdir/subdir:
+
+./testdir1:
+file1.txt  newfile.txt  subdir1
+
+./testdir1/subdir1:
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file explorer
+bash: ./build/file: No such file or directory
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+0. Quit
+Choose an option: 0
+Goodbye!
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ zip -r file_explorer_assignment1.zip file_explorer
+Command 'zip' not found, but can be installed with:
+sudo apt install zip
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ sudo apt install zip
+[sudo] password for user2004:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm19
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  unzip
+The following NEW packages will be installed:
+  unzip zip
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 350 kB of archives.
+After this operation, 933 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 unzip amd64 6.0-28ubuntu4.1 [174 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 zip amd64 3.0-13ubuntu0.2 [176 kB]
+Fetched 350 kB in 2s (169 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 46657 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-28ubuntu4.1_amd64.deb ...
+Unpacking unzip (6.0-28ubuntu4.1) ...
+Selecting previously unselected package zip.
+Preparing to unpack .../zip_3.0-13ubuntu0.2_amd64.deb ...
+Unpacking zip (3.0-13ubuntu0.2) ...
+Setting up unzip (6.0-28ubuntu4.1) ...
+Setting up zip (3.0-13ubuntu0.2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ zip -r file_explorer_assignment1.zip file_explorer
+        zip warning: name not matched: file_explorer
+
+zip error: Nothing to do! (try: zip -r file_explorer_assignment1.zip . -i file_explorer)
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ zip -r file_explorer_assignment1.zip . -i file_explorer
+        zip warning: zip file empty
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ..
+user2004@DESKTOP-7AD8AO7:~$ ls
+file_explorer
+user2004@DESKTOP-7AD8AO7:~$ zip -r file_explorer_assignment1.zip file_explorer
+  adding: file_explorer/ (stored 0%)
+  adding: file_explorer/build/ (stored 0%)
+  adding: file_explorer/build/file_explorer (deflated 74%)
+  adding: file_explorer/src/ (stored 0%)
+  adding: file_explorer/src/main.cpp (deflated 72%)
+  adding: file_explorer/README.md (deflated 29%)
+  adding: file_explorer/testdir/ (stored 0%)
+  adding: file_explorer/testdir/subdir/ (stored 0%)
+  adding: file_explorer/testdir/file1.txt (stored 0%)
+  adding: file_explorer/testdir/file2.txt (stored 0%)
+  adding: file_explorer/file_explorer_assignment1.zip (stored 0%)
+  adding: file_explorer/testdir1/ (stored 0%)
+  adding: file_explorer/testdir1/subdir1/ (stored 0%)
+  adding: file_explorer/testdir1/file1.txt (stored 0%)
+  adding: file_explorer/testdir1/newfile.txt (stored 0%)
+user2004@DESKTOP-7AD8AO7:~$ ls
+file_explorer  file_explorer_assignment1.zip
+user2004@DESKTOP-7AD8AO7:~$ unzip -1 file_explorer_assignment1.zip
+UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
+Usage: unzip [-Z] [-opts[modifiers]] file[.zip] [list] [-x xlist] [-d exdir]
+  Default action is to extract files in list, except those in xlist, to exdir;
+  file[.zip] may be a wildcard.  -Z => ZipInfo mode ("unzip -Z" for usage).
+
+  -p  extract files to pipe, no messages     -l  list files (short format)
+  -f  freshen existing files, create none    -t  test compressed archive data
+  -u  update files, create if necessary      -z  display archive comment only
+  -v  list verbosely/show version info       -T  timestamp archive to latest
+  -x  exclude files that follow (in xlist)   -d  extract files into exdir
+modifiers:
+  -n  never overwrite existing files         -q  quiet mode (-qq => quieter)
+  -o  overwrite files WITHOUT prompting      -a  auto-convert any text files
+  -j  junk paths (do not make directories)   -aa treat ALL files as text
+  -U  use escapes for all non-ASCII Unicode  -UU ignore any Unicode fields
+  -C  match filenames case-insensitively     -L  make (some) names lowercase
+  -X  restore UID/GID info                   -V  retain VMS version numbers
+  -K  keep setuid/setgid/tacky permissions   -M  pipe through "more" pager
+  -O CHARSET  specify a character encoding for DOS, Windows and OS/2 archives
+  -I CHARSET  specify a character encoding for UNIX and other archives
+
+See "unzip -hh" or unzip.txt for more help.  Examples:
+  unzip data1 -x joe   => extract all files except joe from zipfile data1.zip
+  unzip -p foo | more  => send contents of foo.zip via pipe into program more
+  unzip -fo foo ReadMe => quietly replace existing ReadMe if archive file newer
+user2004@DESKTOP-7AD8AO7:~$ unzip -l file_explorer_assignment1.zip
+Archive:  file_explorer_assignment1.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2025-11-07 17:59   file_explorer/
+        0  2025-11-07 15:09   file_explorer/build/
+    74856  2025-11-07 15:09   file_explorer/build/file_explorer
+        0  2025-11-07 15:07   file_explorer/src/
+     5183  2025-11-07 15:07   file_explorer/src/main.cpp
+      311  2025-11-07 17:51   file_explorer/README.md
+        0  2025-11-07 14:50   file_explorer/testdir/
+        0  2025-11-07 14:49   file_explorer/testdir/subdir/
+        6  2025-11-07 14:49   file_explorer/testdir/file1.txt
+        7  2025-11-07 14:50   file_explorer/testdir/file2.txt
+       22  2025-11-07 17:59   file_explorer/file_explorer_assignment1.zip
+        0  2025-11-07 17:47   file_explorer/testdir1/
+        0  2025-11-07 17:45   file_explorer/testdir1/subdir1/
+        6  2025-11-07 17:45   file_explorer/testdir1/file1.txt
+        0  2025-11-07 17:47   file_explorer/testdir1/newfile.txt
+---------                     -------
+    80391                     15 files
+user2004@DESKTOP-7AD8AO7:~$ explorer.exe
+user2004@DESKTOP-7AD8AO7:~$ \\wsl.localhost\Ubuntu\home\user2004
+\wsl.localhostUbuntuhomeuser2004: command not found
+user2004@DESKTOP-7AD8AO7:~$ explorer.exe .
+user2004@DESKTOP-7AD8AO7:~$ \\wsl.localhost\Ubuntu\home\user2004
+\wsl.localhostUbuntuhomeuser2004: command not found
+user2004@DESKTOP-7AD8AO7:~$ \\wsl.localhost\Ubuntu\home\user2004
+\wsl.localhostUbuntuhomeuser2004: command not found
+user2004@DESKTOP-7AD8AO7:~$ explorer.exe .
+user2004@DESKTOP-7AD8AO7:~$ cd ~/file-explorer
+bash: cd: /home/user2004/file-explorer: No such file or directory
+user2004@DESKTOP-7AD8AO7:~$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ nano src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ std::cout << "7. Copy file\n";
+> ^C
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ nano src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ g++ -std=c++17 -o build/file_explorer src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+0. Quit
+Choose an option: 7
+Enter source file name: ^C
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ mkdir testdir1
+mkdir: cannot create directory ‘testdir1’: File exists
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ mkdir testdir2
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ echo "hello world" > testdir2/sample.txt
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+0. Quit
+Choose an option: 2
+Enter directory name: testdir2
+
+Current Directory: "/home/user2004/file_explorer/testdir2"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+0. Quit
+Choose an option: 1
+Listing: "/home/user2004/file_explorer/testdir2"
+[F]         12 bytes  sample.txt
+
+Current Directory: "/home/user2004/file_explorer/testdir2"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+0. Quit
+Choose an option: 7
+Enter source file name: sample.txt
+Enter destination file name: copy.txt
+Copied successfully to: "/home/user2004/file_explorer/testdir2/copy.txt"
+
+Current Directory: "/home/user2004/file_explorer/testdir2"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+0. Quit
+Choose an option: 1
+Listing: "/home/user2004/file_explorer/testdir2"
+[F]         12 bytes  sample.txt
+[F]         12 bytes  copy.txt
+
+Current Directory: "/home/user2004/file_explorer/testdir2"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+0. Quit
+Choose an option: 8
+Enter current file name: copy.txt
+Enter new name or destination: renamed.txt
+Moved/Renamed successfully to: "/home/user2004/file_explorer/testdir2/renamed.txt"
+
+Current Directory: "/home/user2004/file_explorer/testdir2"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+0. Quit
+user2004@DESKTOP-7AD8AO7:~/file_explorer/src$
+Listing: "/home/user2004/file_explorer/testdir2"
+[F]         12 bytes  renamed.txt
+[F]         12 bytes  sample.txt
+
+Current Directory: "/home/user2004/file_explorer/testdir2"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+0. Quit
+Choose an option: 0
+Goodbye!
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ nano src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ g++ -std=c++17 -o build/file_explorer src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+user2004@DESKTOP-7AD8AO7:~/file_explorer/src$
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+9. Search files (recursive)
+0. Quit
+Choose an option: 9
+Enter search keyword: txt
+"/home/user2004/file_explorer/testdir2/renamed.txt"
+"/home/user2004/file_explorer/testdir2/sample.txt"
+"/home/user2004/file_explorer/testdir/file1.txt"
+"/home/user2004/file_explorer/testdir/file2.txt"
+"/home/user2004/file_explorer/testdir1/file1.txt"
+"/home/user2004/file_explorer/testdir1/newfile.txt"
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+9. Search files (recursive)
+0. Quit
+Choose an option: yes now go to day 5
+Goodbye!
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ~/file_exporer
+bash: cd: /home/user2004/file_exporer: No such file or directory
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ nano src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ g++ -std=c++17 -o build/file_explorer src/main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+9. Search files (recursive)
+10.View permissions
+11.Change permissions
+0. Quit
+Choose an option: 10
+Enter file or directory name: file1.txt
+Not found.
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+9. Search files (recursive)
+10.View permissions
+11.Change permissions
+0. Quit
+Choose an option: file.txt
+Goodbye!
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ echo "test" > file1.txt
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ./build/file_explorer
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+9. Search files (recursive)
+10.View permissions
+11.Change permissions
+0. Quit
+Choose an option: 10
+Enter file or directory name: file1.txt
+Owner Permissions: rw- (r=read, w=write, x=execute)
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+9. Search files (recursive)
+10.View permissions
+11.Change permissions
+0. Quit
+Choose an option: 11
+Enter file or directory name: file1.txt
+
+Choose an option:
+1. Add read permission
+2. Remove read permission
+3. Add write permission
+4. Remove write permission
+5. Add execute permission
+6. Remove execute permission
+Enter choice: 5
+Permissions updated successfully.
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+9. Search files (recursive)
+10.View permissions
+11.Change permissions
+0. Quit
+Choose an option: 10
+Enter file or directory name: file1.txt
+Owner Permissions: rwx (r=read, w=write, x=execute)
+
+Current Directory: "/home/user2004/file_explorer"
+
+=== Console File Explorer ===
+1. List files
+2. Change directory
+3. Go up (parent)
+4. Show file info
+5. Create file / directory
+6. Delete file / directory
+7. Copy file
+8. Move/Rename file
+9. Search files (recursive)
+10.View permissions
+11.Change permissions
+0. Quit
+Choose an option: 0
+Goodbye!
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd ..
+user2004@DESKTOP-7AD8AO7:~$ zip -r file_explorer_assignment1_final.zip file_explorer
+  adding: file_explorer/ (stored 0%)
+  adding: file_explorer/build/ (stored 0%)
+  adding: file_explorer/build/file_explorer (deflated 74%)
+  adding: file_explorer/src/ (stored 0%)
+  adding: file_explorer/src/main.cpp (deflated 79%)
+  adding: file_explorer/file1.txt (stored 0%)
+  adding: file_explorer/testdir2/ (stored 0%)
+  adding: file_explorer/testdir2/renamed.txt (stored 0%)
+  adding: file_explorer/testdir2/sample.txt (stored 0%)
+  adding: file_explorer/README.md (deflated 29%)
+  adding: file_explorer/testdir/ (stored 0%)
+  adding: file_explorer/testdir/subdir/ (stored 0%)
+  adding: file_explorer/testdir/file1.txt (stored 0%)
+  adding: file_explorer/testdir/file2.txt (stored 0%)
+  adding: file_explorer/file_explorer_assignment1.zip (stored 0%)
+  adding: file_explorer/testdir1/ (stored 0%)
+  adding: file_explorer/testdir1/subdir1/ (stored 0%)
+  adding: file_explorer/testdir1/file1.txt (stored 0%)
+  adding: file_explorer/testdir1/newfile.txt (stored 0%)
+user2004@DESKTOP-7AD8AO7:~$ explorer.exe .
+user2004@DESKTOP-7AD8AO7:~$ cat src/main.cpp
+cat: src/main.cpp: No such file or directory
+user2004@DESKTOP-7AD8AO7:~$ cd ~/file_explorer
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ ls
+README.md  file1.txt                      src      testdir1
+build      file_explorer_assignment1.zip  testdir  testdir2
+user2004@DESKTOP-7AD8AO7:~/file_explorer$ cd src
+user2004@DESKTOP-7AD8AO7:~/file_explorer/src$ ls
+main.cpp
+user2004@DESKTOP-7AD8AO7:~/file_explorer/src$ cat main.cpp
+#include <iostream>
+#include <filesystem>
+#include <string>
+#include <chrono>
+#include <iomanip>
+#include <fstream>
+
+namespace fs = std::filesystem;
+
+// -------------- Function to show all menu options --------------
+void show_menu() {
+    std::cout << "\n=== Console File Explorer ===\n";
+    std::cout << "1. List files\n";
+    std::cout << "2. Change directory\n";
+    std::cout << "3. Go up (parent)\n";
+    std::cout << "4. Show file info\n";
+    std::cout << "5. Create file / directory\n";
+    std::cout << "6. Delete file / directory\n";
+    std::cout << "7. Copy file\n";
+    std::cout << "8. Move/Rename file\n";
+    std::cout << "9. Search files (recursive)\n";
+    std::cout << "10.View permissions\n";
+    std::cout << "11.Change permissions\n";
+    std::cout << "0. Quit\n";
+    std::cout << "Choose an option: ";
+}
+
+// -------------- List directory contents --------------
+void list_directory(const fs::path& p) {
+    try {
+        std::cout << "Listing: " << p << "\n";
+        for (auto &entry : fs::directory_iterator(p)) {
+            auto name = entry.path().filename().string();
+            std::string type = entry.is_directory() ? "[D]" : "[F]";
+            std::uintmax_t size = 0;
+            if (entry.is_regular_file()) size = fs::file_size(entry.path());
+            std::cout << type << " " << std::setw(10) << size << " bytes  " << name << "\n";
+        }
+    } catch (const fs::filesystem_error& e) {
+        std::cout << "Error: " << e.what() << "\n";
+    }
+}
+
+// -------------- Show info about one file --------------
+void show_file_info(const fs::path& base) {
+    std::string name;
+    std::cout << "Enter file or directory name: ";
+    std::getline(std::cin, name);
+    fs::path p = base / name;
+
+    try {
+        if (!fs::exists(p)) { std::cout << "Not found!\n"; return; }
+
+        std::cout << "\nPath: " << fs::canonical(p) << "\n";
+        std::cout << "Type: " << (fs::is_directory(p) ? "Directory" : "File") << "\n";
+        if (fs::is_regular_file(p))
+            std::cout << "Size: " << fs::file_size(p) << " bytes\n";
+
+        auto ftime = fs::last_write_time(p);
+        auto sctp = std::chrono::time_point_cast<std::chrono::system_clock::duration>(
+            ftime - fs::file_time_type::clock::now() + std::chrono::system_clock::now());
+        std::time_t cftime = std::chrono::system_clock::to_time_t(sctp);
+        std::cout << "Last modified: " << std::put_time(std::localtime(&cftime), "%F %T") << "\n";
+
+    } catch (const fs::filesystem_error& e) {
+        std::cout << "Error: " << e.what() << "\n";
+    }
+}
+
+// -------------- Create file or directory --------------
+void create_item(const fs::path& base) {
+    std::string name;
+    std::cout << "Enter name: ";
+    std::getline(std::cin, name);
+    std::cout << "Create (f)ile or (d)irectory? ";
+    char type; std::cin >> type;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    fs::path p = base / name;
+    if (fs::exists(p)) { std::cout << "Already exists!\n"; return; }
+
+    try {
+        if (type == 'f') {
+            std::ofstream ofs(p.string());
+            ofs.close();
+            std::cout << "File created.\n";
+        } else if (type == 'd') {
+            fs::create_directory(p);
+            std::cout << "Directory created.\n";
+        } else {
+            std::cout << "Invalid type.\n";
+        }
+    } catch (...) {
+        std::cout << "Error creating item.\n";
+    }
+}
+
+// -------------- Delete file or directory --------------
+void delete_item(const fs::path& base) {
+    std::string name;
+    std::cout << "Enter name to delete: ";
+    std::getline(std::cin, name);
+    fs::path p = base / name;
+
+    if (!fs::exists(p)) { std::cout << "Not found.\n"; return; }
+
+    std::cout << "Are you sure you want to delete " << name << "? (y/n): ";
+    char ans; std::cin >> ans;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    if (ans != 'y' && ans != 'Y') { std::cout << "Aborted.\n"; return; }
+
+    try {
+        if (fs::is_directory(p)) fs::remove_all(p);
+        else fs::remove(p);
+        std::cout << "Deleted successfully.\n";
+    } catch (...) {
+        std::cout << "Error deleting item.\n";
+    }
+}
+// -------------- Copy File --------------
+void copy_file_item(const fs::path& base) {
+    std::string srcName, dstName;
+    std::cout << "Enter source file name: ";
+    std::getline(std::cin, srcName);
+    std::cout << "Enter destination file name: ";
+    std::getline(std::cin, dstName);
+
+    fs::path src = base / srcName;
+    fs::path dst = base / dstName;
+
+    try {
+        if (!fs::exists(src)) {
+            std::cout << "Source file not found.\n";
+            return;
+        }
+        fs::copy_file(src, dst, fs::copy_options::overwrite_existing);        std::cout << "Copied successfully to: " << dst << "\n";
+    } catch (const fs::filesystem_error& e) {
+        std::cout << "Error: " << e.what() << "\n";
+    }
+}
+
+// -------------- Move or Rename File --------------
+void move_or_rename_item(const fs::path& base) {
+    std::string srcName, dstName;
+    std::cout << "Enter current file name: ";
+    std::getline(std::cin, srcName);
+    std::cout << "Enter new name or destination: ";
+    std::getline(std::cin, dstName);
+
+    fs::path src = base / srcName;
+    fs::path dst = base / dstName;
+
+    try {
+        if (!fs::exists(src)) {
+            std::cout << "File not found.\n";
+            return;
+        }
+        fs::rename(src, dst);
+        std::cout << "Moved/Renamed successfully to: " << dst << "\n";    } catch (const fs::filesystem_error& e) {
+        std::cout << "Error: " << e.what() << "\n";
+    }
+}
+// -------------- Search Files Recursively --------------
+void search_files_recursive(const fs::path& base) {
+    std::string query;
+    std::cout << "Enter search keyword: ";
+    std::getline(std::cin, query);
+
+    bool found = false;
+    try {
+        for (auto& entry : fs::recursive_directory_iterator(base)) {
+            auto name = entry.path().filename().string();
+            if (name.find(query) != std::string::npos) {
+                std::cout << entry.path() << "\n";
+                found = true;
+            }
+        }
+        if (!found) std::cout << "No matches found.\n";
+    } catch (const fs::filesystem_error& e) {
+        std::cout << "Error: " << e.what() << "\n";
+    }
+}
+// -------------- View File Permissions --------------
+std::string perms_to_string(fs::perms p) {
+    std::string s;
+    s += ((p & fs::perms::owner_read)  != fs::perms::none) ? "r" : "-";
+    s += ((p & fs::perms::owner_write) != fs::perms::none) ? "w" : "-";
+    s += ((p & fs::perms::owner_exec)  != fs::perms::none) ? "x" : "-";
+    return s;
+}
+
+void view_permissions(const fs::path& base) {
+    std::string name;
+    std::cout << "Enter file or directory name: ";
+    std::getline(std::cin, name);
+    fs::path p = base / name;
+
+    try {
+        if (!fs::exists(p)) {
+            std::cout << "Not found.\n";
+            return;
+        }
+        auto st = fs::status(p).permissions();
+        std::cout << "Owner Permissions: " << perms_to_string(st) << " (r=read, w=write, x=execute)\n";
+    } catch (const fs::filesystem_error& e) {
+        std::cout << "Error: " << e.what() << "\n";
+    }
+}
+// -------------- Change File Permissions (Owner Only) --------------
+void change_permissions(const fs::path& base) {
+    std::string name;
+    std::cout << "Enter file or directory name: ";
+    std::getline(std::cin, name);
+    fs::path p = base / name;
+
+    try {
+        if (!fs::exists(p)) {
+            std::cout << "Not found.\n";
+            return;
+        }
+
+        std::cout << "\nChoose an option:\n";
+        std::cout << "1. Add read permission\n";
+        std::cout << "2. Remove read permission\n";
+        std::cout << "3. Add write permission\n";
+        std::cout << "4. Remove write permission\n";
+        std::cout << "5. Add execute permission\n";
+        std::cout << "6. Remove execute permission\n";
+        std::cout << "Enter choice: ";
+
+        int choice;
+        std::cin >> choice;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        switch (choice) {
+            case 1: fs::permissions(p, fs::perms::owner_read,  fs::perm_options::add); break;
+            case 2: fs::permissions(p, fs::perms::owner_read,  fs::perm_options::remove); break;
+            case 3: fs::permissions(p, fs::perms::owner_write, fs::perm_options::add); break;
+            case 4: fs::permissions(p, fs::perms::owner_write, fs::perm_options::remove); break;
+            case 5: fs::permissions(p, fs::perms::owner_exec,  fs::perm_options::add); break;
+            case 6: fs::permissions(p, fs::perms::owner_exec,  fs::perm_options::remove); break;
+            default: std::cout << "Invalid choice.\n"; return;
+        }
+        std::cout << "Permissions updated successfully.\n";
+    } catch (const fs::filesystem_error& e) {
+        std::cout << "Error: " << e.what() << "\n";
+    }
+}
+
+// -------------- Main Program Loop --------------
+int main() {
+    fs::path current = fs::current_path();
+
+    while (true) {
+        std::cout << "\nCurrent Directory: " << current << "\n";
+        show_menu();
+
+        int choice;
+        if (!(std::cin >> choice)) break;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        if (choice == 0) break;
+        else if (choice == 1) list_directory(current);
+        else if (choice == 2) {
+            std::string dir;
+            std::cout << "Enter directory name: ";
+            std::getline(std::cin, dir);
+            fs::path next = current / dir;
+            if (fs::exists(next) && fs::is_directory(next))
+                current = fs::canonical(next);
+            else
+                std::cout << "Directory not found.\n";
+        }
+        else if (choice == 3) {
+            if (current.has_parent_path()) current = current.parent_path();
+        }
+        else if (choice == 4) show_file_info(current);
+        else if (choice == 5) create_item(current);
+        else if (choice == 6) delete_item(current);
+        else if (choice == 7) copy_file_item(current);
+        else if (choice == 8) move_or_rename_item(current);
+        else if (choice == 9) search_files_recursive(current);
+        else if (choice == 10) view_permissions(current);
+        else if (choice == 11) change_permissions(current);
+        else std::cout << "Invalid option.\n";
+    }
+
+    std::cout << "Goodbye!\n";
+    return 0;
+}
+
+user2004@DESKTOP-7AD8AO7:~/file_explorer/src$
